@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BusExample</string>
+    <string name="autocompleteAPI">http://www.cumtd.com/autocomplete/Stops/v1.0/json/search?query=</string>
+    <string name="stopAPI">https://developer.cumtd.com/api/v2.2/json/GetDeparturesByStop?key=a7e6604bbbc14dabad6c5492362cc1cd&amp;stop_id=</string>
+</resources>
