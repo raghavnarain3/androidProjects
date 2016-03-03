@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import 
+
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class Quotebook extends ActionBarActivity {
         RelativeLayout touch = (RelativeLayout) findViewById(R.id.touch);
         final TextView quoteText = (TextView) findViewById(R.id.quote);
         final TextView personText = (TextView) findViewById(R.id.person);
-       /* final ArrayList<Quote> quoteList = new ArrayList<Quote>();
+        final ArrayList<Quote> quoteList = new ArrayList<Quote>();
         Quote quote4 = new Quote("I wish I was more like Raghav", "Stephen Guevara");
                 quoteList.add(quote4);
         Quote quote1 = new Quote("I love Raghav Narain", "Daniel F.");
@@ -30,27 +30,24 @@ public class Quotebook extends ActionBarActivity {
         Quote quote2 = new Quote("42-14",
                 "Raghav Narain");
         quoteList.add(quote2);
-<<<<<<< HEAD
         Quote quote3 = new Quote("I suck at Madden", "Steve");
                 quoteList.add(quote3);
         Quote quote5 = new Quote("I wish I was as good as Raghav at fifa", "Dan");
-=======
-        Quote quote3 = new Quote("I suck at Madden", "Steve 'Looser' Nodick");
-                quoteList.add(quote3);
-        Quote quote5 = new Quote("I wish I was as good as Raghav at fifa", "Dan's Hoes");
->>>>>>> parent of c001b17... commit
-        quoteList.add(quote5);*/
+                quoteList.add(quote5);
+
+
+        quoteList.add(quote5);
         touch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //if (count < quoteList.size()) {
-                //    Quote q = quoteList.get(count);
+                if (count < quoteList.size()) {
+                    Quote q = quoteList.get(count);
                     quoteText.setText(q.getQuote());
                     personText.setText(q.getPerson());
-                //    count = count + 1;
-                //} else{
-                //    count = 0;
-                //}
+                    count = count + 1;
+                } else{
+                    count = 0;
+                }
             }
         });
     }
